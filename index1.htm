@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>百淘宝度搜索-百度淘宝一起搜-淘宝搜索/百度搜索</title>
+<style type="text/css">
+<!--
+body,div,ul,li{margin:0 auto;padding:0;}
+body{font:12px "宋体";text-align:center;}
+a:link{color:#00F;}
+a:visited {color: #00F;}
+a:hover {color: #c00;}
+ul{list-style:none;}
+.main{clear:both;padding:8px;text-align:center;}
+/*第一种形式*/
+#tabs0 {
+	height: 200px;
+	width: 800px;
+	border: 0px;
+	background-color: #FFFFFF;
+	margin-top: 3px;
+	clear: both;
+}
+.menu0{margin: 10px 0px 5px 300px; font-size:14px;}
+.menu0 li{display:block;float: left; padding: 4px 0;width:100px; text-align: center;cursor:pointer;background: #FFFFff; height:45px;background:url(bai_du.gif) no-repeat; color:#666}
+.menu0 li.hover{background: #f2f6fb; background:url(zhua.gif) no-repeat; color:#000}
+#main0 ul{display: none; margin:0px}
+#main0 ul.block{
+	display: block;
+	margin-left: 30px;
+}
+p{margin:0;padding:0}
+img{border:0}
+td,p,#u{font-size:12px}
+#b,#u,#l td,a{font-family:arial}
+#kw{font:16px Verdana;height:1.78em;padding-top:2px}
+#b{height:30px;padding-top:4px}
+#b,#b a{color:#77c}
+#u{padding-right:10px;line-height:19px;text-align:right;margin:0 0 3px !important;margin:0 0 10px}
+#sb{height:2em;width:5.6em}
+#km{height:50px}
+#l{margin:0px}
+#l td{padding-left:107px}
+p,table{width:650px;border:0}
+#l td,#sb,#km{font-size:14px}
+#l a,#l b{margin-right:11px}
+a{color:#00c;font-family: 宋体;	font-size: 12px;}
+a:active{color:#f60}
+#hp{position:absolute;margin-left:6px}
+#lg{margin:-26px 0 -44px}
+#lk{width:auto;line-height:18px;vertical-align:top}
+form{position:relative;z-index:9}
+
+-->
+</style>
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(m,n){
+var tli=document.getElementById("menu"+m).getElementsByTagName("li");
+var mli=document.getElementById("main"+m).getElementsByTagName("ul");
+for(i=0;i<tli.length;i++){
+   tli[i].className=i==n?"hover":"";
+   mli[i].style.display=i==n?"block":"none";
+}
+}
+
+//-->
+</script>
+
+</head>
+<body>
+<br /><br /><br />
+<img src="baitaobaodu.gif" />
+<div id="tabs0">
+<ul class="menu0" id="menu0">
+   <li onclick="setTab(0,0)" class="hover">用百度</li>
+   <li onclick="setTab(0,1)">用淘宝</li>
+</ul>
+<div class="main" id="main0">
+<ul class="block">
+<li>
+<iframe id="baiduframe" marginwidth="0" marginheight="0" scrolling="no"
+  framespacing="0" vspace="0" hspace="0" frameborder="0" width="720" height="350" style="border:1px solid #FFFFFF"
+  src="http://www.y7wz8.cn/17xg8/baidu.htm">
+</iframe>
+</li>
+</ul>
+<ul>
+<li>
+<iframe id="baiduframe2" marginwidth="0" marginheight="0" scrolling="no"
+  framespacing="0" vspace="0" hspace="0" frameborder="0" width="720" height="350" style="border:1px solid #FFFFFF"
+  src="http://www.y7wz8.cn/17xg8/taobao.html"></iframe>
+</li></ul>
+<div style="height=26px">导航：<a href="http://www.y7wz8.cn" target="_blank">一起玩转吧</a> <a href="http://www.y7wz8.cn/sobao8/" target="_blank">搜宝吧</a> </div>
+<div style="height=26px"><a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备09167330号</a></div>
+</div></div>
+<div style="display:none"><script src="http://s53.cnzz.com/stat.php?id=1596268&web_id=1596268&show=pic" language="JavaScript" charset="gb2312"></script>
+</div>
+</body>
+</html>
