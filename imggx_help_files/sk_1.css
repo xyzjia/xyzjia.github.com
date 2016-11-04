@@ -1,0 +1,117 @@
+BODY {
+	FONT-SIZE: 12px; MARGIN: 0px; LINE-HEIGHT: 22px; FONT-FAMILY: arial, sans-serif,"ËÎÌו"; TEXT-ALIGN: center
+}
+A {
+	FONT-SIZE: 15px; COLOR: #000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 15px; COLOR: #000; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 15px; COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.tbl {
+	BORDER-RIGHT: #7ec8ea 1px solid; BORDER-TOP: #7ec8ea 1px; MARGIN-LEFT: auto; BORDER-LEFT: #7ec8ea 1px solid; WIDTH: 772px; MARGIN-RIGHT: auto; BORDER-BOTTOM: #7ec8ea 1px solid; BACKGROUND-COLOR: #7ec8ea; TEXT-ALIGN: left
+}
+.tbl1 {
+	MARGIN-LEFT: auto; WIDTH: 900px; MARGIN-RIGHT: auto; BACKGROUND-COLOR: #7ec8ea; TEXT-ALIGN: left
+}
+.tbl_topn {
+	WIDTH: 772px
+}
+.tbl_body {
+	BACKGROUND: #f5fafe
+}
+.tbl_topk {
+	HEIGHT: 2px
+}
+.fenhong {
+	FONT-SIZE: 13px; COLOR: #fe0055
+}
+.tbl_top1 {
+	BACKGROUND: #4295db
+}
+.whitetop {
+	FONT-SIZE: 12px; COLOR: #fff
+}
+A.whitetop:link {
+	FONT-SIZE: 12px; COLOR: #fff
+}
+A.whitetop:visited {
+	FONT-SIZE: 12px; COLOR: #fff
+}
+A.whitetop:hover {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+.tbl_tl {
+	MARGIN-LEFT: auto; WIDTH: 772px; MARGIN-RIGHT: auto
+}
+.tbl_tl1 {
+	MARGIN-LEFT: auto; WIDTH: 900px; MARGIN-RIGHT: auto
+}
+.tbl_head {
+	BACKGROUND: #e3f1fc; HEIGHT: 21px; TEXT-ALIGN: left
+}
+.tbl_head A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+.tbl_head A:visited {
+	FONT-SIZE: 12px; COLOR: #000
+}
+.tbl_head A:hover {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+.tbl_td {
+	PADDING-LEFT: 8px; FONT-SIZE: 15px; HEIGHT: 26px; BACKGROUND-COLOR: #f5fafe
+}
+.tbl_td A {
+	FONT-SIZE: 15px; COLOR: #000
+}
+.tbl_td A:visited {
+	COLOR: #009191
+}
+.tbl_td A:hover {
+	COLOR: #ff0000
+}
+.tbl_whitetd {
+	PADDING-LEFT: 8px; FONT-SIZE: 15px; HEIGHT: 26px; BACKGROUND-COLOR: #ffffff
+}
+.tbl_whitetd A {
+	FONT-SIZE: 15px; COLOR: #000
+}
+.tbl_whitetd A:visited {
+	COLOR: #009191
+}
+.tbl_whitetd A:hover {
+	COLOR: #ff0000
+}
+.toptj {
+	FONT-SIZE: 13px; FLOAT: left; MARGIN-LEFT: 10px; COLOR: #ff6600
+}
+.td_height LI {
+	LIST-STYLE-POSITION: inside; LIST-STYLE-IMAGE: url(/i/dot3.gif)
+}
+.td_height {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #ff6600; PADDING-TOP: 0px; HEIGHT: 20px
+}
+.ggao A {
+	FONT-SIZE: 13px; COLOR: #0066ff
+}
+.ggao A:visited {
+	FONT-SIZE: 13px; COLOR: #0066ff
+}
+.ggao A:hover {
+	FONT-SIZE: 13px; COLOR: #0066ff
+}
+.ggao {
+	PADDING-LEFT: 8px; FONT-SIZE: 13px; COLOR: #ff6600; TEXT-ALIGN: left
+}
+.STYLE3 {
+	COLOR: #ffffff
+}
+.hide {
+	PADDING-LEFT: 8px; FONT-SIZE: 13px; COLOR: #ffffff; TEXT-ALIGN: left
+}
+.top2 {
+	BORDER-RIGHT: #7ec8ea 1px solid; BORDER-TOP: #7ec8ea 1px solid; FLOAT: right; BORDER-LEFT: #7ec8ea 1px solid; MARGIN-RIGHT: 5px; BORDER-BOTTOM: #7ec8ea 1px solid; HEIGHT: 60px; BACKGROUND-COLOR: #f5faff
+}
