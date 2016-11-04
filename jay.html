@@ -1,0 +1,345 @@
+<html><head><SCRIPT LANGUAGE="JavaScript">
+<!-- hide script from old browsers
+var phrase = "百度贴吧_周杰伦吧！寻杰千百度，爱伦停不住！";
+var lenPhrase = phrase.length;
+var phraseOut = "";
+var pause = 25;
+var i=0;
+var j=0;
+var animateWidth = 20;
+var position=animateWidth;
+function stack() {
+    if (phrase.charAt(i) != " ") {
+      phraseOut = "";
+      for (j=0; j<i; j++) {
+        phraseOut += phrase.charAt(j);
+      }
+      for (j=i; j<position; j++) {
+        phraseOut += " ";
+      }
+      phraseOut += phrase.charAt(i);
+      for (j=position; j<animateWidth; j++) {
+        phraseOut += " ";
+      }
+      window.status = phraseOut;
+      if (position == i) {
+        animateWidth++;
+        position = animateWidth;
+        i++;
+      }
+      else {
+        position--;
+      }
+    }
+    else {
+      i++
+    }
+    if (i<lenPhrase) {
+        setTimeout("stack()",pause);
+    }
+}
+// end hiding contents --> 
+</SCRIPT>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META NAME="ROBOTS" CONTENT="NOODP"><base target="_self"> 
+<title>百度贴吧_周杰伦吧！寻杰千百度，爱伦停不住！</title>
+<style type="text/css">
+<!--
+td,body,div{font:13px 宋体}
+img{border:0}
+*{padding:0;margin:0}
+body,td,th {
+	font-size: 12px;
+}
+#kw {
+	FONT: 16px Verdana; PADDING-TOP: 2px; HEIGHT: 1.78em
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.ft18 {font-size:14px}
+.STYLE1 {font-size: 14}
+.STYLE2 {font-size: 12px}
+.STYLE3 {font-size: 13px}
+.STYLE4 {color: #FF0000}
+
+-->
+</STYLE>
+<script src="js/base.js"></script>
+
+<SCRIPT  language=javascript>
+var haoCurrHighLight = document.getElementById("haoweb");
+function trim(str){
+	return str.replace(/(^\s*)|(\s*$)/g, "");
+}
+function setStyle(a,b){
+	var c=document.styleSheets[0];
+	if(c.addRule){
+	c.addRule(a,b);
+	}else if(c.insertRule){
+	c.insertRule(a+" { "+b+" }",c.cssRules.length);
+	}}
+function haoValidate(source){
+	wval = trim(f.word.value);
+	if (f.sc.value=="post")
+	{
+	    f.kw.value=f.word.value
+		f.ct.value=""
+		f.tn.value=""
+		f.rn.value=""
+		f.lm.value=""
+		f.rs2.value=0
+		f.myselectvalue.value=1
+		f.ie.value=""
+		f.cl.value=""
+		f.z.value=""
+		f.from.value=""
+	  }
+	if (f.sc.value=="img")
+	{
+		f.ct.value=201326592
+		f.lm.value=-1
+		f.cl.value=2
+		f.tn.value="baiduimage"
+		f.pv.value=""
+		f.rs2.value=""
+		f.myselectvalue.value=""
+		f.ie.value=""
+		f.z.value=0
+		f.rn.value=""
+		f.from.value=""
+		f.f.value=""
+		}
+	if (f.sc.value=="zhidao")
+	{
+		f.ct.value=17
+		f.tn.value="ikaslist"
+		f.rn.value=10
+		f.lm.value=""
+		f.cl.value=""
+		f.ie.value=""
+		f.rs2.value=""
+		f.f.value=""
+		f.myselectvalue.value=""
+		f.z.value=""
+		f.from.value=""
+		}
+	if (f.sc.value=="web")
+	{
+	    f.cl.value=3
+		f.tn.value="y7wz8"
+		f.ct.value=0
+		f.ie.value="gb2312"
+		f.myselectvalue.value=""
+		f.rn.value=""
+		f.rs2.value=""
+		f.z.value=""
+		f.from.value=""
+		f.lm.value=""
+		}
+	
+	   return true;
+}
+function haoSubSearch(sc){
+	changePage(sc);
+	imglogo=document.getElementById("imglogo");
+	if(sc != "baidu"){
+		
+		 if(sc == "Video")
+		{
+			f.action = "http://video.baidu.com/v";
+			imglogo.src="logo_video.gif";
+			imglogo.alt="百度视频搜索";
+			urllogo.href="http://video.baidu.com/";
+		}
+		else
+		{
+			f.action = "http://www.baidu.com/s";
+			imglogo.src="logox3.gif";
+			imglogo.alt="百度首页";
+			urllogo.href="http://www.baidu.com/index.php?tn=y7wz8";
+		}
+		f.sc.value = sc;
+	}
+	else{
+		f.sc.value = "post";
+		haoGoSoba();
+	}
+}
+
+function haoGoSoba(){
+
+	f.action = "http://www.baidu.com/s";
+	f.kw.value = f.word.value;
+}
+function G(id)
+{
+ return document.getElementById(id);
+}
+function changePage(sc){
+	if(haoCurrHighLight == null){
+		haoCurrHighLight = document.getElementById("haoweb");
+	}
+	haoCurrHighLight.className = "searchfod2";
+	haoCurrHighLight = document.getElementById("hao"+sc);
+	haoCurrHighLight.className = "searchfod1";
+	document.f.word.focus()
+	 f.word.value="";
+}
+
+function isSoba(){
+	if(haoCurrHighLight == document.getElementById("haosoba")){
+		haoGoSoba();
+		return true;
+	}
+	else{
+		return true;
+	}
+}
+
+function goSearch(){
+	changeHotWords(document.f.sc.value);
+	if(!haoValidate(1))
+	{
+			return false;
+			}
+	else{
+	 return false;
+	 }
+}
+
+function changeHotWords(category){
+	document.getElementById("td_hotlist").innerHTML = eval(category + "Words");
+}
+function showData(id)
+{
+    var stock = getCookie("HAOSTOCK");
+    var lottery = getCookie("HAOLOTTERY");
+    var sStock=sLottery="";
+    if(stock!=null||lottery!=null)
+    {
+        var stockData = eval(stock);
+        var lotteryData = eval(lottery);
+        for(var i in stockData)
+        {
+            sStock+="<a href="+stockData[i].url+" target=_self>"+stockData[i].name+"</a>&nbsp;&nbsp;";
+        }
+        for(var i in lotteryData)
+        {
+           sLottery+="<a href="+lotteryData[i].url+" target=_self>"+lotteryData[i].name+"</a>&nbsp;&nbsp;";
+        }
+        G(id).innerHTML="<b><a id=mylikeopen href=javascript:void(0) onclick=\"haoGX.openGX();event.returnValue=false;return false;\"> 我定制的网站：</a></b>"+sStock+sLottery;
+    }else
+    {
+        G(id).style.display="none";
+    }
+}
+</SCRIPT>
+<SCRIPT type=text/javascript>
+function moreddshow(e) {
+    vl = document.getElementById('vslist');
+    vm = document.getElementById('vsearchmore');
+    vm.href="javascript:void(0);";
+    if(vl.style.display != 'block'){vl.style.display = 'block';vm.className='on';}
+    else {vl.style.display = 'none';vm.className='';}
+    return false;}
+function moreddhide(e){
+    if (!e) var e = window.event;
+    if(e.srcElement){var cesrc=e.srcElement.getAttribute("id");}
+    else{var cesrc=e.target.getAttribute("id");}
+    if(cesrc!="vsearchmore"){document.getElementById('vslist').style.display = 'none';document.getElementById('vsearchmore').className='';}
+}
+function moreddover(url){vm = document.getElementById('vsearchmore');vm.href=url;}
+function moreddout(){vm = document.getElementById('vsearchmore');vm.href="javascript:void(0);";}
+document.onclick=moreddhide;
+</SCRIPT>
+
+<base target=_self>
+</head>
+<body   onload="document.all.kw.focus()">
+<DIV id=u>
+  <div align="right"><A href="http://www.y7wz8.cn/login.htm"  target="_self">登录</A></div>
+</DIV>
+<div id=showDiv2 style="display=none;width:100%;height:0px;position:absolute;top:0px:left:0px;background-color:#FFF;filter: alpha(opacity=80);opacity:0.4;z-index:65534"></div>
+<center>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <TABLE width="461" height="24" cellPadding=0 cellSpacing=0 id=l>
+    <TBODY>
+      <TR>
+        <TD><DIV class="ft18" id=m>
+          <div align="center" class="ft18"><A
+      href="http://news.baidu.com/" target="_self" onclick=s(this)> <u>新&nbsp;闻</u>&nbsp;</A> 网页&nbsp;  <A href="http://tieba.baidu.com/" target="_self"
+      onclick=s(this)><u>贴&nbsp;吧</u>&nbsp;</A>
+	  <A href="http://www.y7wz8.cn/qin.html" target="_self"
+      onclick=s(this)>&nbsp;</A><A href="http://zhidao.baidu.com/" target="_self"
+      onclick=s(this)><u>知&nbsp;道</u>&nbsp;</A> <A href="http://mp3.baidu.com/" target="_self"
+      onclick=s(this)><u>MP3</u>&nbsp;</A> <A
+      href="http://image.baidu.com/" target="_self" onclick=s(this)><u>图&nbsp;片</u>&nbsp;</A> <A
+      href="http://video.baidu.com/" target="_self" onclick=s(this)><u>视&nbsp;频</u>&nbsp;</A></div>
+        </DIV></TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <CENTER>
+    <TABLE style="MARGIN-LEFT: 15px" cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD style="PADDING-LEFT: 92px; HEIGHT: 62px" noWrap>
+      <DIV style="POSITION: relative">
+      <FORM name=f action=http://www.baidu.com/baidu><INPUT id=kw maxLength=100 size=42 name=wd> 
+        <INPUT id=sb type=submit value=百度一下 style="BORDER-RIGHT: #aba498 0px solid; BORDER-TOP: #aba498 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(images/search_btn.jpg) #f4fbe1; BORDER-LEFT: #aba498 0px solid; WIDTH: 81px; CURSOR: pointer; COLOR: #645a44; MARGIN-RIGHT: 20px; BORDER-BOTTOM: #aba498 0px solid; HEIGHT: 26px">
+  <DIV onselectstart="return false" id=sug></DIV><SPAN id=hp><A
+      href=""></A><BR><A
+      href=""></A></SPAN></FORM></DIV></TD></TR></TBODY></TABLE>
+    <p class="STYLE1"><span class="ft18"><A href="http://www.y7wz8.cn/jaywap.html" target="_self">爪机党 </A></A><A href="http://tieba.baidu.com/%D6%DC%BD%DC%C2%D7/tupian" target="_self"> 图片库&nbsp; </A><A href="http://tieba.baidu.com/%D6%DC%BD%DC%C2%D7/shipin/" target="_self"><u> 视频库</u>&nbsp;</A><A href="http://www.y7wz8.cn/help.html" target="_blank"> 有问题？</A><a href="http://baike.baidu.com/searchword/%D6%DC%BD%DC%C2%D7" target="_self"> 档案&nbsp; </a><A
+href="http://www.y7wz8.cn/w.htm" target="_self">hao123&nbsp; </A><A href="http://hi.baidu.com" target="_self">空间</A><A href="http://www.y7wz8.cn/more.htm" target="_self">&nbsp;</A></span></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <P id=km>
+<P>
+<P style="HEIGHT: 60px"><a href="javascript:void(0);" class="ft18" id="myhao123" onClick="event.returnValue=false;return false;"><u>&lt;做主页点这里&gt;</u></a> <A href="http://tieba.baidu.com/f?kw=%D6%DC%BD%DC%C2%D7" target="_blank" class="STYLE2"><u>百度周杰伦吧邀请您成为贵宾</u></A></P>
+<P style="HEIGHT: 30px"><A
+href="http://www.y7wz8.cn/jay.html" class="STYLE3"
+onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.y7wz8.cn/jay.html')">&lt;把自己的作品设为首页&gt;</A><a href="http://www.y7wz8.cn/help.html" target="_blank" class="STYLE2">设不上？</a> <span class="STYLE2">仅以此站献给所有善良的人们!</span> 
+  <script src="http://s22.cnzz.com/stat.php?id=1596268&web_id=1596268" language="JavaScript" charset="gb2312"></script>
+  </span></P>
+<P class="STYLE4" style="HEIGHT: 30px">&nbsp;</P>
+  </CENTER>
+  <table width="970" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:5px;border:1px solid #DDDDC5"><tr><td id="mylike" class="h5" style="text-align:left;display:none; line-height:135%; border-bottom:1px solid #E8F1D4;"></td></tr><tr><td id=showdata  class="h5" style="text-align:left;border-top:0px;line-height:135%"><script>showData("showdata");</script></td></tr></table>
+<h6>&nbsp;</h6>
+<div id=showDiv style="display:none;position:absolute;width:800px;height:700px;border:2px solid #7BD676;z-index:65535"><iframe id=ifr width="100%" frameborder="0" style="height:100%;" scrolling="no"></iframe></div>
+
+<script src="js/haogx.js"></script>
+</center>
+
+
+
+
+<SCRIPT>var w=document.f.wd;function s(o){if(w.value.length>0){var h=o.href;var q=encodeURIComponent(w.value);if(h.indexOf("q=")!=-1){o.href=h.replace(new RegExp("q=[^&$]*"),"q="+q)}else{o.href+="?q="+q}}};(function(){if(new RegExp("q=([^&]+)").test(location.search)){w.value=decodeURIComponent(RegExp.$1)}})();if(navigator.cookieEnabled && !/sug?=0/.test(document.cookie)){document.write('<script src=http://www.baidu.com/js/bdsug.js?v=1.1.0.1><\/script>')};window.onunload=function(){};</SCRIPT>
+
+</BODY>
+</HTML>
