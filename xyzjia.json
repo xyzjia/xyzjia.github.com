@@ -576,7 +576,35 @@
 			"searchable": 0,
 			"quickSearch": 0,
 			"changeable": 0
-		}, {
+		},{
+			"key":"drpy_js_Alist",
+			"name":"网盘 | Alist[js]",
+			"type":3,
+			"api":"./libs/js/alist.min.js",
+			"ext":"./libs/js/alist.json"},
+			{
+    	"key": "本地",
+    	"name": "本地存储",
+    	"type": 3,
+    	"api": "csp_Local",
+    	"searchable": 0,
+    	"changeable": 0},{
+    	"key": "AList",
+    	"name": "AList",
+    	"type": 3,
+    	"api": "csp_AList",
+    	"searchable": 1,
+    	"changeable": 0,
+    	"ext": "./libs/js/alist1.json"},
+    	{
+    	"key": "WebDAV",
+    	"name": "WebDAV",
+    	"type": 3,
+    	"api": "csp_WebDAV",
+    	"searchable": 1,
+    	"changeable": 0,
+    	"ext": "./libs/js/webdav.json"},
+    	{
 			"key": "cc",
 			"name": "请勿相信视频中广告",
 			"type": 3,
