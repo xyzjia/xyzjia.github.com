@@ -595,7 +595,7 @@
     	"api": "csp_AList",
     	"searchable": 1,
     	"changeable": 0,
-    	"ext": "./libs/js/alist1.json"},
+    	"ext": "./alist1.json"},
     	{
     	"key": "WebDAV",
     	"name": "WebDAV",
@@ -603,7 +603,7 @@
     	"api": "csp_WebDAV",
     	"searchable": 1,
     	"changeable": 0,
-    	"ext": "./libs/js/webdav.json"},
+    	"ext": "./webdav.json"},
     	{
 			"key": "cc",
 			"name": "请勿相信视频中广告",
